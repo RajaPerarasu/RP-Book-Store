@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RP Book store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <style>
+	 body
+    {
+        background-color: rgba(141, 220, 235, 0.897);
+    }
+	#q
+    {
+        color:rgb(66, 63, 56);
+    }
+	#z
+    {
+        background-color: rgba(141, 220, 235, 0.897);;
+
+    
+    }
+    .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #0d6efd; 
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+		margin-left: 25%;
+      width: 50%;
+    }
+	 #text{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: gray
+    }
+    .img-box {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      
+    }
+
+    .img-box img {
+      width: 100%;
+      border-radius: .5rem;
+    }
+
+    .img-box .btn-slide {
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: bottom 0.4s ease;
+    }
+
+    .img-box:hover .btn-slide {
+      bottom: 5px;
+    }
+  </style>
+</head>
+<body class="text-center mt-5">
+
+  <nav class="nav justify-content-center border-bottom pb-2">
+    <a class="nav-link active text-dark fw-semibold " href="RP1.html">ALL BOOKS</a>
+    <a class="nav-link text-dark fw-semibold" href="classic.html">CLASSIC</a>
+    <a class="nav-link text-dark fw-semibold" href="romance.html">ROMANCE</a>
+    <a class="nav-link text-dark fw-semibold" href="drama.html">DRAMA</a>
+    <a class="nav-link text-dark fw-semibold" href="manga.html">MANGA</a>
+
+</nav>
+<section id="all">
+	<div class="row mt-5 ms-5 me-5">
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href=""> <img  src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQjqb0fStXX20ij5j3QuTdY2m7IfRzeDBUvJW53Jesq-uTDHMcTKXx7s6oRgldfDsuLqpXhrOEEj588f4xta1ODMOf4k610_YYPLY4eRFf4kwEbyreH-gRqCw"
+                
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt=""></a>
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>The Secret Key</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Lena Jones</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 10.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/71E8VNPC1dL._SY342_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>Ugly Love </b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">  Colleen Hoover</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 40.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT3FpGcy6sUJ3-k-F3yb6kN88CRXcfhjdb6qJHdmGTk6zkYfOZHSBthWaNhMKZxTsBfRS1p2o5EU4fIzBwkzJakpLX5E79wq-NNmH_dfaTqmBmTPNefMiqsHQ"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>Twisted Love </b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">  Ana Huang</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 17.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/41+aIwopttL._SY445_SX342_FMwebp_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>My Messed-up Love Story</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">y Chetan Bhagat </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 28.00</h4></div>
+        </div> 
+         
+	</div>
+</div>
+<div class="row mt-5 ms-5 me-5">
+		
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://m.media-amazon.com/images/I/91JGwQlnu7L._SY466_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>Book Thief</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Markus Zusak </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 16.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication125/v4/43/63/d5/4363d5a8-86a6-8fb6-9c88-2b29f1472a4f/9780316460002.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>The Catcher in the Rye </b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> J. D. Salinger</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 49.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                     <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication1/v4/57/2d/0b/572d0b84-abdc-5494-d2a6-fac5fe9cde0c/9780307517999.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>The Comedy Writer </b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Peter Farrelly</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 7.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication113/v4/f8/2c/d1/f82cd139-1b95-dffd-d767-8e9d0400303d/9781609455187.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>All the Good Things</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">Clare Fisher </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 28.00</h4></div>
+        </div> 
+         
+	</div>
+</div>
+<div class="row mt-5 ms-5 me-5">
+		
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication/69/18/17/mzi.pmbhcdhh.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>The Bad Mother's Handbook</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Kate Long </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 6.99</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                     <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication221/v4/6d/17/fa/6d17fa10-2efb-786d-63df-39ce15cc6474/9781637742211.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b> The Revolutionary Guide to Acting</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Bernard Hiller & Peter Farrelly</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 9.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication1/v4/61/e9/b8/61e9b842-7ecb-3d76-cfb8-7c2f2f1b3e80/9788490651278.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>Deja de actuar. Empieza a vivir </b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Bernard Hiller</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 5.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication/f1/be/8f/mzi.aldutvew.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>Outside Providence</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">Peter Farrelly </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 18.00</h4></div>
+        </div> 
+         
+	</div>
+</div>
+<div class="row mt-5 ms-5 me-5">
+		
+		<div class="col-sm-3  ">
+                <div class="text-center img-box "  id="z">
+                  <a href="">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication123/v4/4c/55/ec/4c55eca1-ae4a-07b5-0024-2fcd1cd4dfcc/9780061745799.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>I Know This Much Is True</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Wally Lamb </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 9.99</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication/v4/cc/83/0b/cc830b74-980c-4c06-711d-37ffa6b98cdc/9780061980312_Outside_Front_Cover.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b> The Hour I First Believed</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Wally Lamb</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 18.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication126/v4/3f/6e/fa/3f6efa8a-6267-6a3f-07ea-b092153f7bcd/9780593134696.d.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>I'll Be Seeing You</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Elizabeth Berg</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 5.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                  <a href="">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Publication116/v4/19/2c/d5/192cd53a-5cdb-3455-4254-c1920d9b51a2/9780358658665.jpg/313x0w.webp"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  </a>
+                 
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>What's So Funny?</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">David Sipress </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 18.60</h4></div>
+        </div> 
+         
+	</div>
+</div>
+
+<div class="row mt-5 ms-5 me-5">
+		
+		<div class="col-sm-3  ">
+                <div class="text-center img-box "  id="z">
+                 <img src="https://m.media-amazon.com/images/I/91NxYvUNf6L._SY425_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>ONE PIECE</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class=""> Eiichiro Oda  </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 10.99</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                 <img src="https://m.media-amazon.com/images/I/51BucomQlHL._SY445_SX342_FMwebp_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b> NARUTO</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">  Masashi Kishimoto </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 11.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                 <img src="https://m.media-amazon.com/images/I/81GgWmcj+jL._SY425_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>ATTACK ON TITAN</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">  Hajime Isayama</p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 11.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                 <img src="https://m.media-amazon.com/images/I/51L7-voUDSL._SY445_SX342_FMwebp_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>BLEACH</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">Tite Kubo  </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 10.60</h4></div>
+        </div> 
+	</div>
+</div>
+<div class="row mt-5 ms-5 me-5">
+		<div class="col-sm-3  ">
+                <div class="text-center img-box "  id="z">
+                 <img src="https://m.media-amazon.com/images/I/81rzQHAySML._SY425_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>DEMON SLAYER</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">    Natsuki Hokami </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 15.99</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                 <img src="https://m.media-amazon.com/images/I/41bqvsJ6xML._SY445_SX342_FMwebp_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b> MANGA JUJUTSU KAISEN </b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">   GEGE AKUTAMI </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 7.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                 <img src="https://m.media-amazon.com/images/I/51XEG-D1U-L._SY445_SX342_FMwebp_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>Dandadan</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">  Yukinobu Tatsu </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 8.00</h4></div>
+        </div>
+		<div class="col-sm-3  ">
+                <div class="text-center img-box"  id="z">
+                 <img src="https://m.media-amazon.com/images/I/816hywlmu-L._SY425_.jpg"
+                  class=" shadow p-1 mt-5 mb-5"  style="height: 300px;width: 200px;" alt="">
+                  <button class="btn btn-dark btn-slide " style="width: 100%;">BUY NOW</button>
+             </div>
+                    <h5 id="text" class="mt-5 "><b>SOLO LEVELING</b></h5>
+                    <h6 id="" class="ms-3 mt-2"><p class="">Tite Kubo  DUBU </p> </h6>
+                    <div class="item-price ms-3" id="text"><h4 class="">$ 14.60</h4></div>
+        </div> 
+	</div>
+</div>
+</section>
+</body>
+</html>
